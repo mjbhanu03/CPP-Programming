@@ -20,13 +20,21 @@ class Frequency
                         count++;
                     }
                 }
-                std::cout << arr[elementNumber] << std::endl;
+                std::cout << arr[elementNumber] << " is repeated "<< count << std::endl;
                 elementNumber++;
 
                 if(elementNumber == size)
                 {
-                    exit;
+                    break;
                 }
             }
         }
 };  
+
+int main()
+{
+    int array[] = {1, 2, 2, 1, 5, 8, 9, 1, 5, 6, 6};
+    Frequency array1;
+
+    array1.checkNumberOfTimesRepeated(11, array);
+}
