@@ -38,6 +38,10 @@ public:
                 {
                     cout << halfOfarray << " index";
                 }
+                else if(number != arr[halfOfarray] && halfOfarray == 0)
+                {
+                    cout << "Sorry, No Element found.";
+                }
                 else
                 {
                     binarySearch(arr, halfOfarray, number, 0);
@@ -79,7 +83,7 @@ int main()
         }
     }
 
-    cout << "Please enter a number:";
+    cout << "\nPlease enter a number:";
     cin >> number;
 
     s1.binarySearch(arr, size, number, 0);
